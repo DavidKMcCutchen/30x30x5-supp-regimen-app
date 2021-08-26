@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <supp-regimen-supp-list
+        [supps]="supps$ | async"
+        (selected)="selectedSupp($event)"
+        (deleted)="deleteSupp($event)"
+      ></supp-regimen-supp-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <supp-regimen-supp-details
+        [form]="form"
+        [supp]="selectedSupp$ | async"
+        (save)="saveSupp($event)"
+        (cancelled)="cancel()"
+      ></supp-regimen-supp-details>
+    </div>
+  </div>

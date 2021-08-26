@@ -1,0 +1,12 @@
+{
+    "supps": [
+        {
+        "id": 1,
+        "name": "L-Carnitine",
+        "description": "Used to enhance energy production",
+        "dosage": "500mg",
+        "doseSched": "3x daily w/ meals",
+        "bannedSub": false
+        }
+    ]
+}
