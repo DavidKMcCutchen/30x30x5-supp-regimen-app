@@ -64,10 +64,11 @@ export class SuppComponent implements OnInit {
   private initForm() {
     this.form = this.formBuilder.group({
       id: null,
-      title: ['', Validators.required],
-      date: ['', Validators.required],
-      time: ['', Validators.required],
-      specialPay: ['']
+      name: ['', Validators.required],
+      description: ['', Validators.required],
+      dosage: [''],
+      doseSched: [''],
+      bannedSub: ['']
     })
   }
 
